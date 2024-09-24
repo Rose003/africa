@@ -27,7 +27,7 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault(); // Prevent default form submission
         try {
-            const response = await axios.post('http://localhost:3001/api/auth/login', {
+            const response = await axios.post('https://thrift-backend-1974.onrender.com/api/auth/login', {
                 email: logdata.email,
                 password: logdata.password
             });

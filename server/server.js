@@ -37,7 +37,7 @@ app.use((req, res, next) => {
     res.header('Cross-Origin-Resource-Policy', 'cross-origin');
     
     // Content Security Policy to allow CORS for images
-    res.header("Content-Security-Policy", "default-src 'self'; img-src 'self' data: http://localhost:3001; script-src 'self'; style-src 'self';");
+    res.header("Content-Security-Policy", "default-src 'self'; img-src 'self' data: https://thrift-backend-1974.onrender.com; script-src 'self'; style-src 'self';");
   
     next();
 });

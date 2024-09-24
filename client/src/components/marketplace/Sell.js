@@ -102,7 +102,7 @@ const Sell = ({ addProduct }) => {
         });
 
         try {
-            const response = await axios.post('http://localhost:3001/sell', formData, {
+            const response = await axios.post('https://thrift-backend-1974.onrender.com/sell', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
