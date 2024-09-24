@@ -17,7 +17,7 @@ const app = express(); // Initialize the app
 
 // Use CORS middleware
 const corsOptions = {
-    origin: 'http://localhost:3000', // Allow requests from your frontend
+    origin: 'https://thrift-frontend.onrender.com', // Allow requests from your frontend
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type'],
     credentials: true // If you need to allow credentials
@@ -29,7 +29,7 @@ app.use(cors(corsOptions));
 // Additional headers for security
 app.use((req, res, next) => {
     // Allow specific origins and allow cross-origin resource sharing
-    res.header('Access-Control-Allow-Origin', 'http://localhost:3000'); // Replace with your frontend URL
+    res.header('Access-Control-Allow-Origin', 'https://thrift-frontend.onrender.com'); // Replace with your frontend URL
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
     
