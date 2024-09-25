@@ -43,7 +43,7 @@ app.use((req, res, next) => {
 });
 
 // Security middleware
-app.use(helmet());
+// app.use(helmet());
 
 // Middleware to parse incoming JSON requests
 app.use(express.json());
